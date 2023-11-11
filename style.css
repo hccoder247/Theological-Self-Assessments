@@ -9,7 +9,6 @@ body {
 
 .container {
     max-width: 600px;
-    Text-align: left;
     margin: auto;
     background-color: #282828; /* Slightly lighter than body for contrast */
     padding: 30px;
@@ -21,7 +20,6 @@ h1 {
     font-size: 2.5em;
     color: #ffcc00; /* Bright accent color */
     margin-bottom: 30px;
-    text-align:center;
 }
 
 label {
@@ -31,13 +29,39 @@ label {
     color: #ffffff;
 }
 
-input[type=number] {
+/* Styles for the sliders */
+input[type=range] {
+    -webkit-appearance: none;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ffcc00; /* Accent color border */
-    border-radius: 4px;
-    background-color: #333;
+    margin: 10px 0;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ffcc00;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #ffcc00;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-track {
+    background: transparent;
+}
+
+/* Style for the value display */
+span {
+    margin-left: 10px;
     color: #fff;
     font-size: 1em;
 }
@@ -45,20 +69,20 @@ input[type=number] {
 input[type=button] {
     width: 100%;
     padding: 12px;
-    background-color: #ffcc00; /* Accent color */
-    color: #1a1a1a; /* Dark text for contrast */
+    background-color: #ffcc00;
+    color: #1a1a1a;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.1em;
     font-weight: bold;
-    text-transform: uppercase; /* Uppercase text for buttons */
+    text-transform: uppercase;
     margin-top: 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 input[type=button]:hover {
-    background-color: #e6b800; /* Darker shade of accent color */
+    background-color: #e6b800;
     color: #ffffff;
 }
 
