@@ -31,3 +31,8 @@ function calculateScore() {
 
     document.getElementById("result").innerHTML = "<strong>" + resultText + "</strong><p>" + descriptionText + "</p>";
 }
+function updateSliderValue(slider) {
+    var outputId = slider.id + "Value";
+    document.getElementById(outputId).textContent = slider.value;
+}
+
