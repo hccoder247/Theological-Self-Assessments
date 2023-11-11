@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theodicy Alignment Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Theodicy Alignment Calculator</h1>
+        <p>Please rate your agreement with the following statements on a scale of 1 to 4. </p> 
+        <p>Rating Explanation: 1 represents strong disagreement, 2 represents moderate disagreement, 3 represents moderate agreement, and 4 represents strong agreement.</p>
+        <form id="theodicyQuiz">
+            <!-- Question 1 -->
+            <label for="q1">God has absolute power and control over creation.</label>
+            <input type="number" id="q1" name="q1" min="1" max="4"><br>
+
+            <!-- Question 2 -->
+            <label for="q2">I believe that suffering and evil are a result of human misuse of free will.</label>
+            <input type="number" id="q2" name="q2" min="1" max="4"><br>
+
+            <!-- Question 3 -->
+            <label for="q3">Suffering can be seen as retribution for sin, a means of moral and spiritual growth, or a test of faith.</label>
+            <input type="number" id="q3" name="q3" min="1" max="4"><br>
+
+            <!-- Question 4 -->
+            <label for="q4">I believe that the ultimate justification for the presence of evil is found in eternal life.</label>
+            <input type="number" id="q4" name="q4" min="1" max="4"><br>
+
+            <!-- Question 5 -->
+            <label for="q5">I believe that God's power is self-limited to allow for human freedom.</label>
+            <input type="number" id="q5" name="q5" min="1" max="4"><br>
+
+            <!-- Question 6 -->
+            <label for="q6">A world with free will is superior to one without, even if it allows for the existence of evil.</label>
+            <input type="number" id="q6" name="q6" min="1" max="4"><br>
+
+            <!-- Question 7 -->
+            <label for="q7">I agree that not all suffering can be justified as useful for personal growth or part of God's plan.</label>
+            <input type="number" id="q7" name="q7" min="1" max="4"><br>
+
+            <!-- Question 8 -->
+            <label for="q8">I believe that God's allowance of evil is related to the development of moral responsibility and the natural order.</label>
+            <input type="number" id="q8" name="q8" min="1" max="4"><br>
+
+            <!-- Question 9 -->
+            <label for="q9">I see God's power as persuasive and non-coercive, respecting human freedom.</label>
+            <input type="number" id="q9" name="q9" min="1" max="4"><br>
+
+            <!-- Question 10 -->
+            <label for="q10">I think that conflicts among various goods and values contribute to the existence of evil in the world.</label>
+            <input type="number" id="q10" name="q10" min="1" max="4"><br>
+
+            <!-- Question 11 -->
+            <label for="q11">I acknowledge that some suffering and evil have no final justification and are simply tragic.</label>
+            <input type="number" id="q11" name="q11" min="1" max="4"><br>
+
+            <!-- Question 12 -->
+            <label for="q12">I believe in the overall goodness and worth of creation, upheld by divine grace.</label>
+            <input type="number" id="q12" name="q12" min="1" max="4"><br>
+
+            <input type="button" value="Calculate" onclick="calculateScore()">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
